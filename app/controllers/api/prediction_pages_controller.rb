@@ -29,4 +29,10 @@ class Api::PredictionPagesController < ApplicationController
     render 'lotto_view.json.jbuilder' 
   end
 
+  def count_action
+    @count = 0
+    @count += 1
+    render 'count_view.json.jbuilder'
+  end
+
 end
